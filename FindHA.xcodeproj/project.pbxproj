@@ -11,6 +11,8 @@
 		EDD8789F2B31EB5C00BFDCDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8789E2B31EB5C00BFDCDF /* ContentView.swift */; };
 		EDD878A12B31EB5E00BFDCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD878A02B31EB5E00BFDCDF /* Assets.xcassets */; };
 		EDD878A42B31EB5E00BFDCDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD878A32B31EB5E00BFDCDF /* Preview Assets.xcassets */; };
+		EDD878B32B31F59C00BFDCDF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD878B22B31F59C00BFDCDF /* Colors.xcassets */; };
+		EDD878B52B31F5B600BFDCDF /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD878B42B31F5B600BFDCDF /* Color+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EDD8789E2B31EB5C00BFDCDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD878A02B31EB5E00BFDCDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD878A32B31EB5E00BFDCDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDD878B22B31F59C00BFDCDF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EDD878B42B31F5B600BFDCDF /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,12 @@
 		EDD8789B2B31EB5C00BFDCDF /* FindHA */ = {
 			isa = PBXGroup;
 			children = (
-				EDD8789C2B31EB5C00BFDCDF /* FindHAApp.swift */,
-				EDD8789E2B31EB5C00BFDCDF /* ContentView.swift */,
-				EDD878A02B31EB5E00BFDCDF /* Assets.xcassets */,
+				EDD878B02B31F4DB00BFDCDF /* Resources */,
+				EDD878AF2B31F4D500BFDCDF /* View */,
+				EDD878AE2B31F4CF00BFDCDF /* Model */,
+				EDD878AD2B31F4BB00BFDCDF /* Application */,
+				EDD878AC2B31F47800BFDCDF /* Util */,
+				EDD878AA2B31F45700BFDCDF /* Network */,
 				EDD878A22B31EB5E00BFDCDF /* Preview Content */,
 			);
 			path = FindHA;
@@ -65,6 +72,61 @@
 				EDD878A32B31EB5E00BFDCDF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDD878AA2B31F45700BFDCDF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EDD878AC2B31F47800BFDCDF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EDD878B12B31F4F100BFDCDF /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EDD878AD2B31F4BB00BFDCDF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EDD8789C2B31EB5C00BFDCDF /* FindHAApp.swift */,
+				EDD8789E2B31EB5C00BFDCDF /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EDD878AE2B31F4CF00BFDCDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDD878AF2B31F4D500BFDCDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDD878B02B31F4DB00BFDCDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDD878A02B31EB5E00BFDCDF /* Assets.xcassets */,
+				EDD878B22B31F59C00BFDCDF /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDD878B12B31F4F100BFDCDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDD878B42B31F5B600BFDCDF /* Color+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD878B32B31F59C00BFDCDF /* Colors.xcassets in Resources */,
 				EDD878A42B31EB5E00BFDCDF /* Preview Assets.xcassets in Resources */,
 				EDD878A12B31EB5E00BFDCDF /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD878B52B31F5B600BFDCDF /* Color+.swift in Sources */,
 				EDD8789F2B31EB5C00BFDCDF /* ContentView.swift in Sources */,
 				EDD8789D2B31EB5C00BFDCDF /* FindHAApp.swift in Sources */,
 			);
